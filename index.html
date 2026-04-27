@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Noticias</title>
 
     <!-- Link Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    
-    Hello, World
+
+    <nav class="navbar navbar-expand-lg px-5" style="background-color: #0b0f19;">
+
+        <!-- Lista de assuntos -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-3 me-2">
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-bolder">Hardware</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-bolder">Startups</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-bolder">IA</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-bolder">Segurança</a></li>
+            </ul>
+        </div>
+
+        <!-- botão para abrir form de pesquisa -->
+        <button class="btn btn-outline-light rounded-5" type="submit"><i class="bi bi-search"></i></button>
+
+        <!-- botão para abrir offcanvas se for mobile -->
+        <button class="btn btn-outline-light rounded-5 ms-2" type="submit"><i class="bi bi-list"></i></button>
+
+
+    </nav>
+
 
 
     <!-- Link Bootstrap JavaScript -->
-    <script src="bootstrap/css"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
