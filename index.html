@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Noticias</title>
 
+    <!-- Link CSS Padrão -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Link Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -15,6 +18,7 @@
 
 <body>
 
+    <!-- header -->
     <nav class="navbar navbar-expand-lg px-5" style="background-color: #0b0f19;">
 
         <!-- Lista de assuntos -->
@@ -28,18 +32,67 @@
         </div>
 
         <!-- botão para submeter form de pesquisa -->
-        <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-submit-search" type="submit" hidden><i class="bi bi-box-arrow-in-right"></i></button>
+        <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-submit-search" type="submit" hidden><i
+                class="bi bi-box-arrow-in-right"></i></button>
 
         <!-- form para pesquisar por matérias ou temas-->
-        <input class="form-control ms-2 w-25 border border-0" id="form-nav-search" type="text" placeholder="Pesquisar" hidden>
+        <input class="form-control ms-2 w-25 border border-0" id="form-nav-search" type="text" placeholder="Pesquisar"
+            hidden>
 
         <!-- botão para abrir form de pesquisa -->
-        <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-open-search" type="button"><i class="bi bi-search"></i></button>
+        <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-open-search" type="button"><i
+                class="bi bi-search"></i></button>
 
         <!-- botão para abrir offcanvas se for mobile -->
         <button class="btn btn-outline-light rounded-5 ms-2" type="submit"><i class="bi bi-list"></i></button>
 
     </nav>
+
+    <!-- container principal -->
+    <main class="container-fluid">
+
+        <!-- logo  -->
+        <h1 class="h-auto display-3 fw-bold text-center pt-4 pb-3">LOGO</h1>
+
+        <!-- container com 75% de altura que abriga colunas com as principais  noticia-->
+        <div class="container h-75 d-flex gap-3">
+
+            <!-- container com altura de 100% e largura de 75% -->
+            <div class="container h-100 w-75">
+
+                <!-- linha do grid com altura 100% e gap horizontal de 5 -->
+                <div class="row h-100">
+
+                    <!-- coluna com largura de 8 colunas do grid -->
+                    <div class="col col-8 border">
+
+                    </div>
+
+                    <!-- coluna com largura de 8 colunas do grid -->
+                    <div class="col col-4 ">
+
+                        <!-- linha do grid com altura 50% -->
+                        <div class="row h-50 border">
+                        </div>
+
+                        <!-- linha do grid com altura 50% -->
+                        <div class="row h-50 border">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- container com altura de 100% e largura de 25% -->
+            <div class="container h-100 w-25 border">
+
+            </div>
+
+        </div>
+
+    </main>
 
 
 
