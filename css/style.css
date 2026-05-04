@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-main{
+#hero{
     background-color: #3b82f6;
     height: 125dvh;
+}
+
+.coluna-noticia{
+    height: 48%;
 }
