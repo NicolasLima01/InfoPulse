@@ -21,6 +21,8 @@
     <!-- header -->
     <nav class="navbar sticky-top navbar-expand-lg px-5" style="background-color: #0b0f19;">
 
+        <img src="img/logo_branca.png" alt="" width="100px" height="25px">
+
         <!-- Lista de assuntos -->
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-3 me-2">
@@ -48,13 +50,16 @@
 
     </nav>
 
-    <!-- container principal -->
+    <!-- CONTAINER PRINCIPAL -->
+
     <main>
 
         <div id="hero" class="container-fluid">
 
             <!-- logo -->
-            <h1 class="h-auto display-3 fw-bold text-center pt-4 pb-3">LOGO</h1>
+            <h1 class="h-auto display-3 fw-bold text-center pt-4 pb-3">
+                <a href="#"><img src="img/logo_branca.png" alt="Logo InfoPulse" width="400px" height="100px"></a>
+            </h1>
 
             <!-- container com 75% de altura que abriga colunas com as principais noticias -->
             <div class="container h-75 w-100 d-flex">
@@ -88,7 +93,7 @@
                 </div>
 
                 <!-- container com altura de 100% e largura de 25% -->
-                <div class="container h-100 w-25 border p-0">
+                <div class="container h-100 w-25 p-0">
 
                     <h2 class="h-auto pb-5 ps-3">Principais Notícias</h2>
 
@@ -112,11 +117,12 @@
         </div>
 
         <!-- Área com Últimas Notícias -->
+
         <div class="container-fluid">
 
             <div class="container h-auto w-100 d-flex py-5">
-                <div class="container  border w-75 pt-5">
-                    <h2 class="h-auto pb-3 ps-3">Últimas Notícias</h2>
+                <div class="container w-75 pt-5">
+                    <h1 class="h-auto pb-3 ps-3">Últimas Notícias</h1>
 
                     <ul class="list-group list-group-flush px-1">
                         <a href="#" class="list-group-item list-group-item-action bg-transparent pb-5 mb-4">Primeira
@@ -139,25 +145,37 @@
                     </ul>
                 </div>
 
+                <!-- NOTICIAS MAIS POPULARES -->
+
                 <div class="container h-auto border w-25 pt-5" id="mais-populares">
                     <div class="card border-0 rounded-0" id="mais-populares">
                         <div class="card-body text-white">
                             <h2 class="h-auto pb-3 ps-3">Mais Populares</h1>
                                 <ul class="list-group list-group-flush text-white px-1">
                                     <a href="#"
-                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3">Primeira
+                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3">
+                                        <i class="bi bi-stop-fill"></i>Primeira
                                         notícia</a>
                                     <a href="#"
-                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3">Segunda
+                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3">
+                                        <i class="bi bi-stop-fill"></i>
+                                        Segunda
+                                        notícia
+                                    </a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3"><i
+                                            class="bi bi-stop-fill"></i>
+                                        Terceira
                                         notícia</a>
                                     <a href="#"
-                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3">Terceira
+                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3"><i
+                                            class="bi bi-stop-fill"></i>
+                                        Quarta
                                         notícia</a>
                                     <a href="#"
-                                        class="list-group-item list-group-item-action bg-transparent text-white pb-3">Quarta
-                                        notícia</a>
-                                    <a href="#"
-                                        class="list-group-item list-group-item-action bg-transparent text-white pb-5">Quinta
+                                        class="list-group-item list-group-item-action bg-transparent text-white pb-5"><i
+                                            class="bi bi-stop-fill"></i>
+                                        Quinta
                                         notícia</a>
 
                                 </ul>
@@ -170,26 +188,27 @@
 
     </main>
 
+    <!-- RODAPÉ DO SITE -->
+
     <footer class="container-fluid bg-dark px-5">
         <div class="row h-100">
-            <div class="col-6 border border-light px-5">
+            <div class="col-6 pt-4 px-5">
                 <!-- logo -->
-                <h2 class="display-5 fw-bold text-light pt-4 pb-3">LOGO</h2>
+                <!-- <h2 class="display-5 fw-bold text-light pt-4 pb-3">LOGO</h2> -->
+                <a href="#"><img src="img/logo_azul.png" alt="Logo InfoPulse" height="75px" width="300px"></a>
             </div>
 
-            <div class="col-3 pt-4 border border-light">
+            <div class="col-3 pt-4">
                 <ul class="list-group">
-                    <li class="list-group-item bg-transparent text-light border-0">Item 1</li>
-                    <li class="list-group-item bg-transparent text-light border-0">Item 2</li>
-                    <li class="list-group-item bg-transparent text-light border-0">Item 3</li>
+                    <li class="list-group-item bg-transparent text-light border-0">InfoPulse</li>
+                    <li class="list-group-item bg-transparent text-light border-0">Entre em Contato</li>
                 </ul>
             </div>
 
-            <div class="col-3 pt-4 border border-light">
+            <div class="col-3 pt-4">
                 <ul class="list-group">
-                    <li class="list-group-item bg-transparent text-light border-0">Item 1</li>
-                    <li class="list-group-item bg-transparent text-light border-0">Item 2</li>
-                    <li class="list-group-item bg-transparent text-light border-0">Item 3</li>
+                    <li class="list-group-item bg-transparent text-light border-0">Termos de Serviço</li>
+                    <li class="list-group-item bg-transparent text-light border-0">Política de Privacidade</li>
                 </ul>
             </div>
         </div>
