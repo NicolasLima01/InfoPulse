@@ -1,3 +1,29 @@
+// NAVBAR
+
+let navBar = document.getElementById('navbar'); //declarando variável que recebe navbar
+let LogoNavBar = document.getElementById('logo-navbar');
+
+// LogoNavBar.hidden = true;
+// LogoNavBar.style.width = 0;
+
+// Evento que ocorre quando o usuário scrollar
+window.addEventListener("scroll", () => {
+
+    // Ocorre se a distancia vertical do usuario for superior a 500px do topo da página
+    if (window.scrollY > 500) {
+        navBar.classList.add("sticky-top");
+        // LogoNavBar.hidden = false;
+        LogoNavBar.style.width = "100px";
+    }
+    // Ocorre se a distancia vertical do usuario for inferior a 500px do topo da página
+    else {
+        navBar.classList.remove("sticky-top");
+        // LogoNavBar.hidden = true;
+        LogoNavBar.style.width = 0;
+    }
+})
+
+
 let btnAbrirPesquisa = document.getElementById("btn-nav-open-search"); // variável que recebe elemento do botão que abre o form depesquisa do navbar
 let FormPesquisa = document.getElementById("form-nav-search"); // variável que recebe elemento do botão de pesquisa do navbar
 let btnSubmeterPesquisa = document.getElementById("btn-nav-submit-search"); // variável que recebe elemento do botão que conclui pesquisa do navbar

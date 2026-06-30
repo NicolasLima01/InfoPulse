@@ -1,8 +1,16 @@
+/* FONTES */
+
 @font-face {
     font-family: "Inter";
-    src: url(../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
+@font-face {
+    font-family: "Inter Bold";
+    src: url(../fonts/static/Inter_28pt-ExtraBold.ttf);
+}
+
+/* Estilos CSS */
 
 *{
     margin: 0;
@@ -24,11 +32,33 @@ footer{
     height: 300px;
 }
 
-#mais-populares{
+/* Area de Noticias Mais Populares */
+#div-mais-populares{
     /* font-family: "Inter"; */
     background-color: #8b5cf6;
 }
 
-#itens-nav{
-    width: 500px;
+/* Titulo da Area de Principais Noticias */
+
+#heading-principais-noticias{
+    font-family: "Inter Bold";
+    font-size: 32px;
+}
+
+/* Titulo da Area de Ultimas Noticias */
+
+#heading-ultimas-noticias{
+    font-family: "Inter Bold";
+    font-size: 72px;
+}
+
+/* Titulo da Area de Noticias Mais Populares */
+
+#heading-mais-populares{
+    font-family: "Inter Bold";
+    font-size: 44px;
+}
+
+#logo-navbar{
+    transition:  ease 1s;
 }
