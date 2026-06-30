@@ -1,7 +1,14 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter";
 }
 
 #hero{
@@ -18,5 +25,10 @@ footer{
 }
 
 #mais-populares{
+    /* font-family: "Inter"; */
     background-color: #8b5cf6;
+}
+
+#itens-nav{
+    width: 500px;
 }
