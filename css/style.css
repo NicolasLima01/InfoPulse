@@ -60,5 +60,5 @@ footer{
 }
 
 #logo-navbar{
-    transition:  ease 1s;
+    transition: all 0.5s ease;
 }
