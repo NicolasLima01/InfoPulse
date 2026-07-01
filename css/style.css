@@ -69,3 +69,20 @@ footer{
 #logo-navbar{
     transition: all 0.5s ease;
 }
+
+.img-noticia{
+    height: 108px;
+    width: 192px;
+    aspect-ratio: 16 / 9;
+}
+
+.item-ultimas-noticias:hover p.fw-bold{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.item-ultimas-noticias p.fw-light:hover{
+    text-decoration: underline;
+    text-decoration-line: overline;
+    text-decoration-thickness: 1px;
+}
