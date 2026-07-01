@@ -38,6 +38,13 @@ footer{
     background-color: #8b5cf6;
 }
 
+/* Titulo do Offcanvas */
+
+#heading-offcanvas{
+    font-family: "Inter Bold";
+    font-size: 24px;
+}
+
 /* Titulo da Area de Principais Noticias */
 
 #heading-principais-noticias{

@@ -52,11 +52,15 @@
         </div>
 
         <!-- botão para abrir form de pesquisa -->
-        <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-open-search" type="button"><i
-                class="bi bi-search"></i></button>
+        <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-open-search" type="button">
+            <i class="bi bi-search"></i>
+        </button>
 
         <!-- botão para abrir offcanvas se for mobile -->
-        <button class="btn btn-outline-light rounded-5 ms-2" type="submit"><i class="bi bi-list"></i></button>
+        <button class="btn btn-outline-light rounded-5 ms-2" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-topicos">
+            <i class="bi bi-list"></i>
+        </button>
 
     </nav>
 
@@ -252,6 +256,49 @@
     <!-- ----------------------------------------------------------- -->
     <!--                     FIM FOOTER / RODAPÉ                     -->
     <!-- ----------------------------------------------------------- -->
+
+
+
+    <!-- ----------------------------------------------------------- -->
+    <!--                           OFFCANVAS                         -->
+    <!-- ----------------------------------------------------------- -->
+
+    <!-- Offcanvas com borda à esquerda com opacidade e fundo da cor principal -->
+    <div class="offcanvas offcanvas-end border-start border-light border-opacity-50" id="offcanvas-topicos"
+        tabindex="-1" style="background-color: #3b82f6;">
+
+        <div class="offcanvas-header d-flex justify-content-between" data-bs-theme="dark">
+
+            <!-- Titulo do offcanvas -->
+            <h5 class="offcanvas-title text-white" id="heading-offcanvas">Tópicos</h5>
+
+            <!-- Botão que fecha o offcanvas -->
+            <button type="button" class="btn btn-outline-light rounded-5" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="list-group list-group-flush fw-bolder">
+                <li class="list-group-item bg-transparent text-white">Hardware</li>
+                <li class="list-group-item bg-transparent text-white">Startups</li>
+                <li class="list-group-item bg-transparent text-white">IA</li>
+                <li class="list-group-item bg-transparent text-white">Segurança</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- ----------------------------------------------------------- -->
+    <!--                         FIM OFFCANVAS                       -->
+    <!-- ----------------------------------------------------------- -->
+
+
+
 
     <!-- Link Bootstrap JavaScript -->
 
