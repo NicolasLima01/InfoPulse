@@ -26,11 +26,13 @@
 
     <nav id="navbar" class="navbar navbar-expand-lg px-5" style="background-color: #0b0f19;">
 
-        <img id="logo-navbar" src="img/logo_branca.png" alt="" width="0px" height="25px">
+        <a href="#">
+            <img id="logo-navbar" src="img/logo_branca.png" alt="" width="0px" height="25px">
+        </a>
 
         <!-- Lista de assuntos -->
         <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-3 me-2">
+            <ul class="navbar-nav nav-underline ms-3 me-2">
                 <li class="nav-item"><a href="#" class="nav-link text-white fw-bolder">Hardware</a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white fw-bolder">Startups</a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white fw-bolder">IA</a></li>
@@ -96,7 +98,26 @@
                     <div class="row h-100 w-100">
 
                         <!-- coluna com largura de 8 colunas do grid -->
-                        <div class="col col-8 border coluna-noticia-principal">
+                        <div class="col col-8 border px-0 coluna-noticia-principal">
+
+                            <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
+                            <div class="card text-bg-dark h-100 w-100 rounded-0 overflow-hidden">
+
+                                <img src="" class="card-img w-100 h-100" alt="">
+
+                                <a href="#" class="text-white">
+                                    <div class="card-img-overlay align-self-end">
+                                        <p class="card-text fw-light">Topico</p>
+                                        <h1 id="heading-noticia-principal" class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus
+                                            velit
+                                            recusandae ullam quisquam accusantium veritatis aliquid officiis fugiat?
+                                        </h1>
+                                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                    </div>
+                                </a>
+
+                            </div>
 
                         </div>
 
@@ -104,11 +125,50 @@
                         <div class="col col-4 my-0 pe-0">
 
                             <!-- linha do grid com altura 50% -->
-                            <div class="row mx-1 coluna-noticia border mb-4">
+                            <div class="row mx-1 px-0 coluna-noticia border mb-4">
+
+                                <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
+                                <div class="card text-bg-dark h-100 w-100 rounded-0 px-0 overflow-hidden">
+
+                                    <img src="" class="card-img w-100 h-100" alt="">
+
+                                    <a href="#" class="text-white">
+                                        <div class="card-img-overlay align-self-end">
+                                            <p class="card-text fw-light">Topico</p>
+                                            <h1 id="heading-noticia-secundaria" class="card-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                                possimus
+                                                velit
+                                            </h1>
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
                             </div>
 
                             <!-- linha do grid com altura 50% -->
                             <div class="row mx-1 coluna-noticia border">
+
+                                <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
+                                <div class="card text-bg-dark h-100 w-100 rounded-0 px-0 overflow-hidden">
+
+                                    <img src="" class="card-img w-100 h-100 " alt="">
+                                    
+                                    <a href="#" class="text-white">
+                                        <div class="card-img-overlay align-self-end">
+                                            <p class="card-text fw-light">Topico</p>
+                                            <h1 id="heading-noticia-secundaria" class="card-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                                possimus
+                                                velit
+                                            </h1>
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </a>
+
+                                </div>
                             </div>
 
                         </div>
@@ -122,22 +182,23 @@
 
                     <h2 id="heading-principais-noticias" class="text-white h-auto pb-5 ps-3">Principais Notícias</h2>
 
-                    <ul class="list-group list-group-flush px-1">
-                        <a href="#"
-                            class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">Primeira
-                            notícia</a>
-                        <a href="#"
-                            class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">Segunda
-                            notícia</a>
-                        <a href="#"
-                            class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">Terceira
-                            notícia</a>
-                        <a href="#"
-                            class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">Quarta
-                            notícia</a>
-                        <a href="#"
-                            class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">Quinta
-                            notícia</a>
+                    <ul id="list-principais-noticias" class="list-group list-group-flush px-1">
+
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">
+                            Primeira notícia
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">
+                            Segunda notícia
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">
+                            Terceira notícia
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">
+                            Quarta notícia
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent text-white pb-5 mb-4">
+                            Quinta notícia
+                        </a>
 
                     </ul>
                 </div>
@@ -156,56 +217,64 @@
                     <h1 id="heading-ultimas-noticias" class=" text-primary pb-3 ps-3">Últimas Notícias</h1>
 
                     <ul class="list-group list-group-flush px-1">
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary fs-6">Tópico</p>
                                 <p class="fw-bold">Primeira notícia</p>
                             </div>
                         </a>
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary">Tópico</p>
                                 <p class="fw-bold">Segunda notícia</p>
                             </div>
                         </a>
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary">Tópico</p>
                                 <p class="fw-bold">Terceira notícia</p>
                             </div>
                         </a>
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary">Tópico</p>
                                 <p class="fw-bold">Quarta notícia</p>
                             </div>
                         </a>
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary">Tópico</p>
                                 <p class="fw-bold">Quinta notícia</p>
                             </div>
                         </a>
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary">Tópico</p>
                                 <p class="fw-bold">Sexta notícia</p>
                             </div>
                         </a>
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
-                                <p class="fw-light text-primary">Tópico</p>                                
+                                <p class="fw-light text-primary">Tópico</p>
                                 <p class="fw-bold">Sétima notícia</p>
                             </div>
                         </a>
-                        <a href="#" class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
+                        <a href="#"
+                            class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-noticia">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary">Tópico</p>
@@ -223,7 +292,7 @@
                     <div id="div-mais-populares" class="card border-0 rounded-0">
                         <div class="card-body text-white">
                             <h2 id="heading-mais-populares" class="h-auto pb-3 ps-3">Mais Populares</h2>
-                            <ul class="list-group list-group-flush text-white px-1">
+                            <ul id="list-mais-populares" class="list-group list-group-flush text-white px-1">
                                 <a href="#"
                                     class="list-group-item list-group-item-action bg-transparent text-white pb-3">
                                     <i class="bi bi-stop-fill"></i>Primeira

@@ -12,77 +12,124 @@
 
 /* Estilos CSS */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter";
 }
 
-#hero{
+#hero {
     background-color: #3b82f6;
     height: 125dvh;
 }
 
-.coluna-noticia{
+.coluna-noticia {
     height: 48%;
 }
 
-footer{
+footer {
     height: 300px;
 }
 
 /* Area de Noticias Mais Populares */
-#div-mais-populares{
+#div-mais-populares {
     /* font-family: "Inter"; */
     background-color: #8b5cf6;
 }
 
 /* Titulo do Offcanvas */
 
-#heading-offcanvas{
+#heading-offcanvas {
     font-family: "Inter Bold";
     font-size: 24px;
 }
 
 /* Titulo da Area de Principais Noticias */
 
-#heading-principais-noticias{
+#heading-principais-noticias {
     font-family: "Inter Bold";
     font-size: 32px;
 }
 
 /* Titulo da Area de Ultimas Noticias */
 
-#heading-ultimas-noticias{
+#heading-ultimas-noticias {
     font-family: "Inter Bold";
     font-size: 72px;
 }
 
 /* Titulo da Area de Noticias Mais Populares */
 
-#heading-mais-populares{
+#heading-mais-populares {
     font-family: "Inter Bold";
     font-size: 44px;
 }
 
-#logo-navbar{
+#logo-navbar {
     transition: all 0.5s ease;
 }
 
-.img-noticia{
+.img-noticia {
     height: 108px;
     width: 192px;
     aspect-ratio: 16 / 9;
 }
 
-.item-ultimas-noticias:hover p.fw-bold{
+.item-ultimas-noticias:hover p.fw-bold {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
-.item-ultimas-noticias p.fw-light:hover{
+.item-ultimas-noticias p.fw-light:hover {
     text-decoration: underline;
     text-decoration-line: overline;
     text-decoration-thickness: 1px;
+}
+
+#heading-noticia-principal {
+    font-family: "Inter Bold";
+    font-size: 44px;
+}
+
+#heading-noticia-principal:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+#heading-noticia-secundaria:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+#heading-noticia-secundaria {
+    font-family: "Inter Bold";
+    font-size: 24px;
+}
+
+#list-principais-noticias .list-group-item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#list-mais-populares .list-group-item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+
+.coluna-noticia-principal div img {
+    transition: all 0.5s ease;
+}
+
+.coluna-noticia-principal div img:hover {
+    scale: 1.1;
+}
+
+.coluna-noticia div img {
+    transition: all 0.5s ease;
+}
+
+.coluna-noticia div img:hover {
+    scale: 1.1;
 }

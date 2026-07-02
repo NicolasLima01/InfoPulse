@@ -38,3 +38,14 @@ btnAbrirPesquisa.addEventListener('click', function () {
     //if ternário semelhante ao de cima, porém, para o botão de submeter pesquisa
     btnSubmeterPesquisa.hidden === true ? btnSubmeterPesquisa.hidden = false : btnSubmeterPesquisa.hidden = true;
 });
+
+
+// Código para tirar o underline do texto enquanto o mouse estiver por cima do topico
+
+// let itemUltimaNoticiaTopico = document.querySelector(".item-ultimas-noticias div .fw-light");
+// let itemUltimaNoticiaTexto = document.querySelector(".item-ultimas-noticias div .fw-bold");
+
+// itemUltimaNoticiaTopico.addEventListener('mouseover', function () {
+//     itemUltimaNoticiaTexto.style.textDecoration = "none";
+//     itemUltimaNoticiaTexto.style.textDecorationLine = "none";
+// })
