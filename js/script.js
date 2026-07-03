@@ -1,25 +1,21 @@
 // NAVBAR
 
 let navBar = document.getElementById('navbar'); //declarando variável que recebe navbar
-let LogoNavBar = document.getElementById('logo-navbar');
+let LogoNavBar = document.getElementById('logo-navbar'); //declarando variável que recebe Logo no navbar
 
-// LogoNavBar.hidden = true;
-// LogoNavBar.style.width = 0;
-
-// Evento que ocorre quando o usuário scrollar
+// Evento que ocorre quando o usuário rolar a página
 window.addEventListener("scroll", () => {
 
     // Ocorre se a distancia vertical do usuario for superior a 500px do topo da página
     if (window.scrollY > 500) {
-        navBar.classList.add("sticky-top");
-        // LogoNavBar.hidden = false;
-        LogoNavBar.style.width = "100px";
+        navBar.classList.add("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+        LogoNavBar.style.width = "100px"; //Altera a largura da logo para 100px
     }
+
     // Ocorre se a distancia vertical do usuario for inferior a 500px do topo da página
     else {
-        navBar.classList.remove("sticky-top");
-        // LogoNavBar.hidden = true;
-        LogoNavBar.style.width = 0;
+        navBar.classList.remove("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+        LogoNavBar.style.width = 0; //Altera a largura do logo para 0, fazendo a logo desapearecer
     }
 })
 
