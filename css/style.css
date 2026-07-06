@@ -133,3 +133,7 @@ footer {
 .coluna-noticia div img:hover {
     scale: 1.1;
 }
+
+.fundo-gradiente-titulo{
+    background-image: linear-gradient(rgb(255,255,255, 0), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 1));
+}
