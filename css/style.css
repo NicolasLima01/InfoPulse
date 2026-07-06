@@ -104,7 +104,7 @@ footer {
 
 #heading-noticia-secundaria {
     font-family: "Inter Bold";
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #list-principais-noticias .list-group-item:hover {
@@ -120,18 +120,20 @@ footer {
 
 .coluna-noticia-principal div img {
     transition: all 0.5s ease;
+    height: 664px;
 }
 
 .coluna-noticia-principal div img:hover {
-    scale: 1.1;
+    scale: 1.05;
 }
 
 .coluna-noticia div img {
     transition: all 0.5s ease;
+    aspect-ratio: 1/1;
 }
 
 .coluna-noticia div img:hover {
-    scale: 1.1;
+    scale: 1.05;
 }
 
 .fundo-gradiente-titulo{
