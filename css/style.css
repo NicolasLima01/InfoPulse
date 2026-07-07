@@ -79,26 +79,29 @@
 
 /* Imagem do card principal */
 .column-card-1 div img {
-    transition: all 0.5s ease;
-    height: 664px;
+    transition: all 0.5s ease; /* transição do zoom da imagem */
+    aspect-ratio: 1/1;
+    object-fit: cover; /* Faz imagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem */
 }
 
 .column-card-1 div img:hover {
-    scale: 1.05;
+    scale: 1.05; /* Aumenta tamanho da imagem, gerando efeito de zoom */
 }
 
 /* Imagem do card secundario */
 .column-card-2 div img {
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; /* transição do zoom da imagem */
     aspect-ratio: 1/1;
+    object-fit: cover; /* Faz imagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem */
 }
 
 .column-card-2 div img:hover {
-    scale: 1.05;
+    scale: 1.05; /* Aumenta tamanho da imagem, gerando efeito de zoom */
 }
 
 /* Classe que aplica gradiente ao fundo do titulo dos cards */
 .bg-gradiente-titulo {
+    /* Aplica gradiente com opacidade */
     background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 1));
 }
 
