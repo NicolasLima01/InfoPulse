@@ -40,7 +40,7 @@
             </ul>
         </div>
 
-        <!-- input gruop que une o input e button -->
+        <!-- input group que une o input e button -->
         <div class="input-group w-25">
 
             <!-- input para pesquisar por matérias ou temas-->
@@ -77,7 +77,7 @@
     <!-- ----------------------------------------------------------- -->
 
 
-    <main>
+    <main class="h-auto">
 
         <div id="hero" class="container-fluid">
 
@@ -101,12 +101,13 @@
                             <!-- CARD PRINCIPAL -->
 
                             <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                            <div class="card text-bg-dark h-100 w-100 rounded-0 overflow-hidden">
+                            <div class="card text-bg-dark h-100 w-100 overflow-hidden border-0 rounded-0">
 
-                                <img src="img/anthropic.jpg" class="card-img w-100 h-100 rounded-0" alt="">
+                                <!-- object-fit-cover para aimagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem -->
+                                <img src="img/anthropic.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
 
                                 <a href="#" class="text-white">
-                                    <div class="card-img-overlay align-self-end rounded-0 bg-gradiente-titulo">
+                                    <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
                                         <p class="card-text fw-light">IA</p>
                                         <h1 id="heading-card-principal" class="card-text">
                                             Anthropic prepara primeiro chip de IA com tecnologia de 2 nm da Samsung
@@ -127,12 +128,13 @@
                                 <!-- CARD SECUNDARIO -->
 
                                 <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                                <div class="card text-bg-dark h-100 w-100 rounded-0 px-0 overflow-hidden">
+                                <div class="card text-bg-dark h-100 w-100 px-0 overflow-hidden border-0 rounded-0">
 
-                                    <img src="img/erro_steam_machine.jpg" class="card-img w-100 h-100 rounded-0" alt="">
+                                    <!-- object-fit-cover para aimagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem -->
+                                    <img src="img/erro_steam_machine.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
 
                                     <a href="#" class="text-white">
-                                        <div class="card-img-overlay align-self-end rounded-0 bg-gradiente-titulo">
+                                        <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
                                             <p class="card-text fw-light">HARDWARE</p>
                                             <h1 id="heading-card-secundario" class="card-text">
                                                 Nova Steam Machine da Valve apresenta linha vermelha de erro fatal
@@ -150,12 +152,13 @@
                                 <!-- CARD SECUNDARIO -->
 
                                 <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                                <div class="card text-bg-dark h-100 w-100 rounded-0 px-0 overflow-hidden">
+                                <div class="card text-bg-dark h-100 w-100 px-0 overflow-hidden border-0 rounded-0">
 
-                                    <img src="img/Alibaba.jpg" class="card-img w-100 h-100 rounded-0" alt="">
+                                    <!-- object-fit-cover para aimagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem -->
+                                    <img src="img/Alibaba.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
 
                                     <a href="#" class="text-white">
-                                        <div class="card-img-overlay align-self-end rounded-0 bg-gradiente-titulo">
+                                        <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
                                             <p class="card-text fw-light">IA</p>
                                             <h1 id="heading-card-secundario" class="card-text">
                                                 Alibaba proíbe uso do Claude Code após acusações de roubo de dados
@@ -207,9 +210,11 @@
                 <!-- AREA ULTIMAS NOTICIAS -->
 
                 <div class="container w-75 pt-5">
+
                     <h1 id="heading-ultimas-noticias" class=" text-primary pb-3 ps-3">Últimas Notícias</h1>
 
                     <ul class="list-group list-group-flush px-1">
+
                         <a href="#"
                             class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-item-ultimas-noticias" src="img/outlook.png">
@@ -219,6 +224,7 @@
                                     duplicar dados</p>
                             </div>
                         </a>
+
                         <a href="#"
                             class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-item-ultimas-noticias" src="img/sony-ps.jpg">
@@ -227,15 +233,17 @@
                                 <p class="fw-bold">Sony enfrenta petição global para travar o fim dos jogos físicos</p>
                             </div>
                         </a>
+
                         <a href="#"
                             class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-item-ultimas-noticias" src="img/whatsapp.jpeg">
                             <div class="d-flex flex-column ps-4">
                                 <p class="fw-light text-primary">APPS</p>
-                                <p class="fw-bold">WhatsApp prepara novo modo que torna os tablets no teu dispositivo
+                                <p class="fw-bold">WhatsApp prepara novo modo que torna os tablets como dispositivo
                                     principal</p>
                             </div>
                         </a>
+
                         <a href="#"
                             class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-item-ultimas-noticias" src="img/one-plus-ace-7.jpg">
@@ -245,6 +253,7 @@
                                 </p>
                             </div>
                         </a>
+
                         <a href="#"
                             class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-item-ultimas-noticias" src="img/Alibaba.jpg">
@@ -254,6 +263,7 @@
                                 </p>
                             </div>
                         </a>
+
                         <a href="#"
                             class="item-ultimas-noticias list-group-item list-group-item-action d-flex bg-transparent pb-3 mb-2">
                             <img class="img-item-ultimas-noticias" src="img/oneplus_realme.jpg">
@@ -263,9 +273,9 @@
                                     ColorOS</p>
                             </div>
                         </a>
-                        
+
                         <hr hidden> <!-- Codigo que serve apenass para a ultima linha da ul ser gerada-->
-                        
+
                     </ul>
                 </div>
 
@@ -275,7 +285,9 @@
 
                     <div id="div-mais-populares" class="card border-0 rounded-0">
                         <div class="card-body text-white">
+
                             <h2 id="heading-mais-populares" class="h-auto pb-3 ps-3">Mais Populares</h2>
+
                             <ul id="list-mais-populares" class="list-group list-group-flush text-white px-1">
                                 <a href="#"
                                     class="list-group-item list-group-item-action bg-transparent text-white pb-3">
@@ -310,21 +322,26 @@
             </div>
         </div>
 
-        <div id="hardware" class="container my-5 pt-5">
 
-            <h1 id="heading-ultimas-noticias" class=" text-primary pb-3 ps-3">Hardware</h1>
+        <!-- HARDWARE -->
 
-            <div class="d-flex justify-content-between w-100">
+
+        <div id="hardware" class="container vh-100 my-5 pt-4">
+
+            <!-- Titulo da categoria HARDWARE -->
+            <h1 class="heading-categorias text-primary mb-3 ps-3">Hardware</h1>
+
+            <div class="d-flex justify-content-between gap-4 w-100" style="height: 85%;">
 
                 <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                <div class="card text-bg-dark h-100 w-50 rounded-0 overflow-hidden">
+                <div class="div-card-categoria-1 card text-bg-dark h-100 w-50 overflow-hidden border-0 rounded-0">
 
                     <img src="img/erro_steam_machine.jpg" class="card-img w-100 h-100 rounded-0" alt="">
 
                     <a href="#" class="text-white">
-                        <div class="card-img-overlay align-self-end rounded-0 bg-gradiente-titulo">
+                        <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
                             <p class="card-text fw-light">HARDWARE</p>
-                            <h1 id="heading-card-principal" class="card-text">
+                            <h1 class="heading-card-categoria-1 card-text">
                                 Nova Steam Machine da Valve apresenta linha vermelha de erro fatal
                             </h1>
                             <p class="card-text"><small>Atualizado à 4 horas</small></p>
@@ -333,30 +350,17 @@
 
                 </div>
 
-            </div>
+                <div class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
 
-        </div>
+                    <img src="img/ram.jpg" class="card-img-top object-fit-cover h-50 w-100 rounded-0" alt="">
 
-        <div id="software" class="container my-5 pt-5">
-
-            <h1 id="heading-ultimas-noticias" class=" text-primary pb-3 ps-3">Software</h1>
-
-            <div class="d-flex justify-content-between w-100">
-
-                <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                <div class="card text-bg-dark h-100 w-50 rounded-0 overflow-hidden">
-
-                    <img src="" class="card-img w-100 h-100 rounded-0" alt="">
-
-                    <a href="#" class="text-white">
-                        <div class="card-img-overlay align-self-end rounded-0 bg-gradiente-titulo">
-                            <p class="card-text fw-light">SOFTWARE</p>
-                            <h1 id="heading-card-principal" class="card-text">
-
-                            </h1>
-                            <p class="card-text"><small>Atualizado à horas</small></p>
-                        </div>
-                    </a>
+                    <div class="card-body">
+                        <p class="card-text text-primary fw-light">HARDWARE</p>
+                        <h1 class="heading-card-categoria-2 card-text">
+                            Centros de IA forçam novo aumento no preço das memórias RAM e SSD
+                        </h1>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado à 5 horas</small></p>
+                    </div>
 
                 </div>
 
@@ -364,26 +368,92 @@
 
         </div>
 
-        <div id="IA" class="container my-5 pt-5">
 
-            <h1 id="heading-ultimas-noticias" class=" text-primary pb-3 ps-3">IA</h1>
+        <!-- SOFTWARE -->
 
-            <div class="d-flex justify-content-between w-100 py-5">
+
+        <div id="software" class="container vh-100 pt-4">
+
+            <!-- Titulo da categoria SOFTWARE -->
+            <h1 class="heading-categorias text-primary mb-3 ps-3">Software</h1>
+
+            <div class="d-flex justify-content-between gap-4 w-100" style="height: 85%;">
 
                 <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                <div class="card text-bg-dark h-100 w-50 rounded-0 overflow-hidden">
+                <div class="div-card-categoria-1 card text-bg-dark h-100 w-50 overflow-hidden border-0 rounded-0">
 
-                    <img src="img/Alibaba.jpg" class="card-img w-100 h-100 rounded-0" alt="">
+                    <img src="img/outlook.png" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
 
                     <a href="#" class="text-white">
-                        <div class="card-img-overlay align-self-end rounded-0 bg-gradiente-titulo">
-                            <p class="card-text fw-light">IA</p>
-                            <h1 id="heading-card-principal" class="card-text">
-
+                        <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
+                            <p class="card-text fw-light">SOFTWARE</p>
+                            <h1 class="heading-card-categoria-1 card-text">
+                                Microsoft integra contatos do Outlook diretamente no sistema iOS sem
+                                duplicar dados
                             </h1>
-                            <p class="card-text"><small>Atualizado à horas</small></p>
+                            <p class="card-text"><small>Atualizado à 30 minutos</small></p>
                         </div>
                     </a>
+
+                </div>
+
+                <div class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
+
+                    <img src="img/whatsapp.jpeg" class="card-img-top object-fit-cover h-50 w-100 rounded-0" alt="">
+
+                    <div class="card-body">
+                        <p class="card-text text-primary fw-light">APPS</p>
+                        <h1 class="heading-card-categoria-2 card-text">
+                            WhatsApp prepara novo modo que torna os tablets como dispositivo principal
+                        </h1>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado à 4 horas</small></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- IA -->
+
+
+        <div id="IA" class="container vh-100 my-5 pt-4">
+
+            <!-- Titulo da categoria IA -->
+            <h1 class="heading-categorias text-primary mb-3 ps-3">IA</h1>
+
+            <div class="d-flex justify-content-between gap-4 w-100" style="height: 85%;">
+
+                <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
+                <div class="div-card-categoria-1 card text-bg-dark h-100 w-50 overflow-hidden border-0 rounded-0">
+
+                    <img src="img/Alibaba.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
+
+                    <a href="#" class="text-white">
+                        <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
+                            <p class="card-text fw-light">IA</p>
+                            <h1 class="heading-card-categoria-1 card-text">
+                                Alibaba proíbe uso do Claude Code após acusações de roubo de dados
+                            </h1>
+                            <p class="card-text"><small>Atualizado à 1 hora</small></p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0">
+
+                    <img src="img/anthropic.jpg" class="card-img-top object-fit-cover overflow-hidden h-50 w-100 rounded-0" alt="">
+
+                    <div class="card-body h-50">
+                        <p class="card-text text-primary fw-light">IA</p>
+                        <h1 class="heading-card-categoria-2 card-text">
+                            Anthropic prepara primeiro chip de IA com tecnologia de 2 nm da Samsung
+                        </h1>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado à 3 horas</small></p>
+                    </div>
 
                 </div>
 
@@ -403,7 +473,7 @@
     <!--                       FOOTER / RODAPÉ                       -->
     <!-- ----------------------------------------------------------- -->
 
-    <footer class="container-fluid bg-dark px-5">
+    <footer class="container-fluid bg-dark px-5 border-top border-5 border-secondary">
         <div class="row h-100">
             <div class="col-6 pt-4 px-5">
                 <!-- logo -->

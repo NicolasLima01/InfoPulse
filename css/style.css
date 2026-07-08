@@ -58,7 +58,7 @@
 /* Titulo do card principal */
 #heading-card-principal {
     font-family: "Inter Bold";
-    font-size: 44px;
+    font-size: 52px;
 }
 
 /* Titulo do card secundario */
@@ -79,24 +79,26 @@
 
 /* Imagem do card principal */
 .column-card-1 div img {
-    transition: all 0.5s ease; /* transição do zoom da imagem */
+    transition: all 0.5s ease;
+    /* transição do zoom da imagem */
     aspect-ratio: 1/1;
-    object-fit: cover; /* Faz imagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem */
 }
 
 .column-card-1 div img:hover {
-    scale: 1.05; /* Aumenta tamanho da imagem, gerando efeito de zoom */
+    scale: 1.05;
+    /* Aumenta tamanho da imagem, gerando efeito de zoom */
 }
 
 /* Imagem do card secundario */
 .column-card-2 div img {
-    transition: all 0.5s ease; /* transição do zoom da imagem */
+    transition: all 0.5s ease;
+    /* transição do zoom da imagem */
     aspect-ratio: 1/1;
-    object-fit: cover; /* Faz imagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem */
 }
 
 .column-card-2 div img:hover {
-    scale: 1.05; /* Aumenta tamanho da imagem, gerando efeito de zoom */
+    scale: 1.05;
+    /* Aumenta tamanho da imagem, gerando efeito de zoom */
 }
 
 /* Classe que aplica gradiente ao fundo do titulo dos cards */
@@ -176,6 +178,59 @@
     text-decoration-thickness: 1px;
 }
 
+
+/* ----------------------------------------------------------- */
+/*                         CATEGORIAS                          */
+/* ----------------------------------------------------------- */
+
+.heading-categorias {
+    font-family: "Inter Bold";
+    font-size: 72px;
+}
+
+.heading-card-categoria-1 {
+    font-family: "Inter Bold";
+    font-size: 44px;
+}
+
+.heading-card-categoria-2 {
+    font-family: "Inter Bold";
+    font-size: 35px;
+}
+
+.heading-card-categoria-1:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.heading-card-categoria-2:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+/* Imagem do card principal */
+.div-card-categoria-1 img {
+    transition: all 0.5s ease;
+    /* transição do zoom da imagem */
+    aspect-ratio: 1/1;
+}
+
+.div-card-categoria-1 img:hover {
+    scale: 1.05;
+    /* Aumenta tamanho da imagem, gerando efeito de zoom */
+}
+
+/* Imagem do card secundario */
+.div-card-categoria-2 img {
+    transition: all 0.5s ease;
+    /* transição do zoom da imagem */
+    aspect-ratio: 1/1;
+}
+
+.div-card-categoria-2 img:hover {
+    scale: 1.05;
+    /* Aumenta tamanho da imagem, gerando efeito de zoom */
+}
 
 /* ----------------------------------------------------------- */
 /*                           FOOTER                            */
