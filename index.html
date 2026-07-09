@@ -26,7 +26,7 @@
 
     <nav id="navbar" class="navbar navbar-expand-lg px-lg-5 px-3" style="background-color: #0b0f19;">
 
-        <a href="#hero" class="" >
+        <a href="#hero" class="">
             <img id="logo-navbar" src="img/logo_branca.png" alt="" width="0px" height="25px">
         </a>
 
@@ -86,13 +86,17 @@
             <!-- Logo da InfoPulse -->
 
             <h1 class="h-auto display-3 fw-bold text-center pt-4 pb-3">
-                <a href="#"><img src="img/logo_branca.png" alt="Logo InfoPulse" width="400px" height="100px"></a>
+                <a href="#">
+                    <!-- Classes para fazer a logo desaparecer em telas menores -->
+                    <img id="logo-hero" class="d-none d-lg-inline" src="img/logo_branca.png" alt="Logo InfoPulse"
+                        width="400px" height="100px">
+                </a>
             </h1>
 
 
             <!-- Container com 75% de altura que abriga colunas dos cards com as principais noticias -->
 
-            <div class="container h-75 w-100 d-flex">
+            <div class="container d-flex h-75 w-100 ">
 
                 <div class="container h-100 w-75 p-0"> <!-- container com altura de 100% e largura de 75% -->
 

@@ -241,6 +241,7 @@ footer {
     height: 300px;
 }
 
+
 @media (max-width: 991px) {
     #logo-navbar {
         transition: none;

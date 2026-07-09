@@ -42,8 +42,6 @@ else {
 }
 
 
-
-
 // ----------------------------------------
 //             PESQUISA NAVBAR
 // ----------------------------------------
@@ -77,9 +75,6 @@ btnAbrirPesquisa.addEventListener('click', function () {
             LogoNavBar.hidden = false;
     }
 });
-
-
-
 
 // Código para tirar o underline do texto enquanto o mouse estiver por cima do topico
 
