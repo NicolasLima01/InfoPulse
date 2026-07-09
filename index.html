@@ -24,9 +24,9 @@
     <!-- ----------------------------------------------------------- -->
 
 
-    <nav id="navbar" class="navbar navbar-expand-lg px-5" style="background-color: #0b0f19;">
+    <nav id="navbar" class="navbar navbar-expand-lg px-lg-5 px-3" style="background-color: #0b0f19;">
 
-        <a href="#">
+        <a href="#hero" class="" >
             <img id="logo-navbar" src="img/logo_branca.png" alt="" width="0px" height="25px">
         </a>
 
@@ -41,28 +41,30 @@
         </div>
 
         <!-- input group que une o input e button -->
-        <div class="input-group w-25">
+        <div class="d-flex justify-content-end w-auto">
+            <div class="input-group w-auto">
 
-            <!-- input para pesquisar por matérias ou temas-->
-            <input class="form-control ms-2 w-25 border border-0" id="form-nav-search" type="text"
-                placeholder="Pesquisar" hidden>
+                <!-- input para pesquisar por matérias ou temas-->
+                <input class="form-control ms-2 border border-0" id="form-nav-search" type="text"
+                    placeholder="Pesquisar" hidden>
 
-            <!-- botão para submeter form de pesquisa -->
-            <button class="btn btn-outline-light " id="btn-nav-submit-search" type="submit" hidden><i
-                    class="bi bi-box-arrow-in-right"></i></button>
+                <!-- botão para submeter form de pesquisa -->
+                <button class="btn btn-outline-light " id="btn-nav-submit-search" type="submit" hidden><i
+                        class="bi bi-box-arrow-in-right"></i></button>
 
+            </div>
+
+            <!-- botão para abrir form de pesquisa -->
+            <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-open-search" type="button">
+                <i class="bi bi-search"></i>
+            </button>
+
+            <!-- botão para abrir offcanvas se for mobile -->
+            <button class="btn btn-outline-light rounded-5 ms-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-topicos">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
-
-        <!-- botão para abrir form de pesquisa -->
-        <button class="btn btn-outline-light rounded-5 ms-2" id="btn-nav-open-search" type="button">
-            <i class="bi bi-search"></i>
-        </button>
-
-        <!-- botão para abrir offcanvas se for mobile -->
-        <button class="btn btn-outline-light rounded-5 ms-2" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvas-topicos">
-            <i class="bi bi-list"></i>
-        </button>
 
     </nav>
 
@@ -104,7 +106,8 @@
                             <div class="card text-bg-dark h-100 w-100 overflow-hidden border-0 rounded-0">
 
                                 <!-- object-fit-cover para aimagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem -->
-                                <img src="img/anthropic.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
+                                <img src="img/anthropic.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0"
+                                    alt="">
 
                                 <a href="#" class="text-white">
                                     <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
@@ -131,7 +134,8 @@
                                 <div class="card text-bg-dark h-100 w-100 px-0 overflow-hidden border-0 rounded-0">
 
                                     <!-- object-fit-cover para aimagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem -->
-                                    <img src="img/erro_steam_machine.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
+                                    <img src="img/erro_steam_machine.jpg"
+                                        class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
 
                                     <a href="#" class="text-white">
                                         <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
@@ -155,7 +159,8 @@
                                 <div class="card text-bg-dark h-100 w-100 px-0 overflow-hidden border-0 rounded-0">
 
                                     <!-- object-fit-cover para aimagem ficar proporcional ao conteudo do card, sem distorcer as dimensões e cobre a largura excedente da imagem -->
-                                    <img src="img/Alibaba.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
+                                    <img src="img/Alibaba.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0"
+                                        alt="">
 
                                     <a href="#" class="text-white">
                                         <div class="card-img-overlay align-self-end bg-gradiente-titulo rounded-0">
@@ -350,7 +355,8 @@
 
                 </div>
 
-                <div class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
+                <div
+                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
 
                     <img src="img/ram.jpg" class="card-img-top object-fit-cover h-50 w-100 rounded-0" alt="">
 
@@ -397,7 +403,8 @@
 
                 </div>
 
-                <div class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
+                <div
+                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
 
                     <img src="img/whatsapp.jpeg" class="card-img-top object-fit-cover h-50 w-100 rounded-0" alt="">
 
@@ -443,9 +450,11 @@
 
                 </div>
 
-                <div class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0">
+                <div
+                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0">
 
-                    <img src="img/anthropic.jpg" class="card-img-top object-fit-cover overflow-hidden h-50 w-100 rounded-0" alt="">
+                    <img src="img/anthropic.jpg"
+                        class="card-img-top object-fit-cover overflow-hidden h-50 w-100 rounded-0" alt="">
 
                     <div class="card-body h-50">
                         <p class="card-text text-primary fw-light">IA</p>

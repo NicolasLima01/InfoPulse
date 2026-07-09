@@ -5,21 +5,43 @@
 let navBar = document.getElementById('navbar'); //declarando variável que recebe navbar
 let LogoNavBar = document.getElementById('logo-navbar'); //declarando variável que recebe Logo no navbar
 
-// Evento que ocorre quando o usuário rolar a página
-window.addEventListener("scroll", () => {
+// window.addEventListener("resize", () => {
+//     if (window.innerWidth > 991){
+//         LogoNavBar.style.width = 0;
+//         navBar.classList.remove("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+//     }
+//     else{
+//         LogoNavBar.style.width = "100px"; //Altera a largura da logo para 100px
+//         navBar.classList.add("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+//     }
+// })
 
-    // Ocorre se a distancia vertical do usuario for superior a 500px do topo da página
-    if (window.scrollY > 500) {
-        navBar.classList.add("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
-        LogoNavBar.style.width = "100px"; //Altera a largura da logo para 100px
-    }
+if (window.innerWidth > 991) {
 
-    // Ocorre se a distancia vertical do usuario for inferior a 500px do topo da página
-    else {
-        navBar.classList.remove("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
-        LogoNavBar.style.width = 0; //Altera a largura do logo para 0, fazendo a logo desapearecer
-    }
-})
+    // Evento que ocorre quando o usuário rolar a página
+    window.addEventListener("scroll", () => {
+
+        // Ocorre se a distancia vertical do usuario for superior a 500px do topo da página
+        if (window.scrollY > 500) {
+            navBar.classList.add("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+            LogoNavBar.style.width = "100px"; //Altera a largura da logo para 100px
+        }
+
+        // Ocorre se a distancia vertical do usuario for inferior a 500px do topo da página
+        else {
+            navBar.classList.remove("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+            LogoNavBar.style.width = 0; //Altera a largura do logo para 0, fazendo a logo desapearecer
+        }
+
+    })
+}
+
+else {
+    navBar.classList.add("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+    LogoNavBar.style.width = "100px"; //Altera a largura da logo para 100px
+}
+
+
 
 
 // ----------------------------------------
@@ -47,7 +69,16 @@ btnAbrirPesquisa.addEventListener('click', function () {
     // if ternário, se o btn de submit estiver escondido, o btn ficará visível,
     // senão, o btn ficará escondido
     btnSubmeterPesquisa.hidden === true ? btnSubmeterPesquisa.hidden = false : btnSubmeterPesquisa.hidden = true;
+
+    if (window.innerWidth <= 526) {
+        if (LogoNavBar.hidden === false)
+            LogoNavBar.hidden = true;
+        else
+            LogoNavBar.hidden = false;
+    }
 });
+
+
 
 
 // Código para tirar o underline do texto enquanto o mouse estiver por cima do topico
