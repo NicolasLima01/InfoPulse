@@ -139,6 +139,10 @@
 /*                      ULTIMAS NOTICIAS                       */
 /* ----------------------------------------------------------- */
 
+#container-ultimas-noticias {
+    width: 75%;
+}
+
 
 /* Titulo da Area de Ultimas Noticias */
 
@@ -169,6 +173,9 @@
 /*                        MAIS POPULARES                       */
 /* ----------------------------------------------------------- */
 
+#container-mais-populares {
+    width: 25%;
+}
 
 /* Area de Noticias Mais Populares */
 #div-mais-populares {
@@ -271,7 +278,13 @@ footer {
     }
 
     /* Containeres da coluna 1 e coluna 2 de cards */
-    #container-column-1, #container-column-2{
+    #container-column-1,
+    #container-column-2 {
+        width: 100%;
+    }
+
+    #container-ultimas-noticias,
+    #container-mais-populares{
         width: 100%;
     }
 }
