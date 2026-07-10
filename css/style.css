@@ -50,6 +50,16 @@
     height: 125dvh;
 }
 
+/* Container da coluna 1 de cards */
+#container-column-1 {
+    width: 75%;
+}
+
+/* Container da coluna 2 de cards */
+#container-column-2 {
+    width: 25%;
+}
+
 /* Cards secundarios do hero */
 .column-card-2 {
     height: 48%;
@@ -242,8 +252,26 @@ footer {
 }
 
 
+/* ----------------------------------------------------------- */
+/*                        MEDIA QUERY                          */
+/* ----------------------------------------------------------- */
+
+
+
 @media (max-width: 991px) {
+
     #logo-navbar {
+        /* Retira transição da logo na navbar */
         transition: none;
+    }
+
+    #hero {
+        /* altura automática para os elementos não ultrapassarem o hero  */
+        height: auto;
+    }
+
+    /* Containeres da coluna 1 e coluna 2 de cards */
+    #container-column-1, #container-column-2{
+        width: 100%;
     }
 }

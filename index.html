@@ -96,13 +96,14 @@
 
             <!-- Container com 75% de altura que abriga colunas dos cards com as principais noticias -->
 
-            <div class="container d-flex h-75 w-100 ">
+            <div class="container d-flex flex-column flex-wrap h-75 w-100 p-lg-0">
 
-                <div class="container h-100 w-75 p-0"> <!-- container com altura de 100% e largura de 75% -->
+                <div id="container-column-1" class="container h-100 p-0"> <!-- container com altura de 100% e largura de 75% -->
 
                     <div class="row h-100 w-100"> <!-- linha do grid com altura 100% e gap horizontal de 5 -->
 
-                        <div class="col col-8 px-0 column-card-1"> <!-- coluna com largura de 8 colunas do grid -->
+                        <!-- container com altura de 100%, largura de 75% em dispositivos maiores e largura de 100% em dispositivos menores -->
+                        <div class="col col-12 col-lg-8 px-0 column-card-1"> 
 
                             <!-- CARD PRINCIPAL -->
 
@@ -128,9 +129,9 @@
                         </div>
 
 
-                        <div class="col col-4 my-0 pe-0"> <!-- coluna com largura de 8 colunas do grid -->
+                        <div class="col col-md-12 col-lg-4 my-0 pe-0 pt-4 pt-lg-0"> <!-- coluna com largura de 8 colunas do grid -->
 
-                            <div class="row mx-1 px-0 column-card-2 mb-4"> <!-- linha do grid com altura 50% -->
+                            <div class="row mx-lg-1 px-0 column-card-2 mb-4"> <!-- linha do grid com altura 50% -->
 
                                 <!-- CARD SECUNDARIO -->
 
@@ -155,7 +156,7 @@
 
                             </div>
 
-                            <div class="row mx-1 column-card-2"><!-- linha do grid com altura 50% -->
+                            <div class="row mx-lg-1 column-card-2"><!-- linha do grid com altura 50% -->
 
                                 <!-- CARD SECUNDARIO -->
 
@@ -182,8 +183,8 @@
                     </div>
                 </div>
 
-                <!-- container com altura de 100% e largura de 25% -->
-                <div class="container h-100 w-25 p-0">
+                <!-- container com altura de 100%, largura de 25% em dispositivos maiores e largura de 100  % em dispositivos menores -->
+                <div id="container-column-2" class="container h-100 p-0 m-0">
 
                     <h2 id="heading-principais-noticias" class="text-white h-auto pb-5 ps-3">Principais Notícias</h2>
 
