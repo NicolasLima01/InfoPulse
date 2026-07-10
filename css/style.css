@@ -270,7 +270,6 @@ footer {
     height: 300px;
 }
 
-
 /* ----------------------------------------------------------- */
 /*                        MEDIA QUERY                          */
 /* ----------------------------------------------------------- */
@@ -294,7 +293,7 @@ footer {
     #container-principais-noticias {
         width: 100%;
     }
-    
+
     /* Definindo largura do containeres de Ultimas Noticias e Mais Populares */
     #container-ultimas-noticias,
     #container-mais-populares {
@@ -306,7 +305,7 @@ footer {
     .div-card-categoria-2 {
         width: 100%;
     }
-    
+
     /* Definindo altura dos cards secundarios de categoria */
     .div-card-categoria-2 img {
         height: 25dvh;
@@ -316,6 +315,10 @@ footer {
     #hardware,
     #software,
     #IA {
+        height: auto;
+    }
+
+    footer {
         height: auto;
     }
 }
