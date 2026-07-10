@@ -50,17 +50,17 @@
     height: 125dvh;
 }
 
-/* Container da coluna 1 de cards */
-#container-column-1 {
+/* Container dos cards de noticias */
+#container-cards-noticias {
     width: 75%;
 }
 
-/* Container da coluna 2 de cards */
-#container-column-2 {
+/* Container de Principais Noticias*/
+#container-principais-noticias {
     width: 25%;
 }
 
-/* Cards secundarios do hero */
+/* Coluna dos cards secundarios do hero */
 .column-card-2 {
     height: 48%;
 }
@@ -200,6 +200,17 @@
 /*                         CATEGORIAS                          */
 /* ----------------------------------------------------------- */
 
+#hardware,
+#software,
+#IA {
+    height: 100dvh;
+}
+
+.div-card-categoria-1,
+.div-card-categoria-2 {
+    width: 50%;
+}
+
 .heading-categorias {
     font-family: "Inter Bold";
     font-size: 72px;
@@ -227,8 +238,8 @@
 
 /* Imagem do card principal */
 .div-card-categoria-1 img {
-    transition: all 0.5s ease;
     /* transição do zoom da imagem */
+    transition: all 0.5s ease;
     aspect-ratio: 1/1;
 }
 
@@ -239,14 +250,15 @@
 
 /* Imagem do card secundario */
 .div-card-categoria-2 img {
-    transition: all 0.5s ease;
+    height: 50%;
     /* transição do zoom da imagem */
+    transition: all 0.5s ease;
     aspect-ratio: 1/1;
 }
 
 .div-card-categoria-2 img:hover {
-    scale: 1.05;
     /* Aumenta tamanho da imagem, gerando efeito de zoom */
+    scale: 1.05;
 }
 
 /* ----------------------------------------------------------- */
@@ -277,14 +289,33 @@ footer {
         height: auto;
     }
 
-    /* Containeres da coluna 1 e coluna 2 de cards */
-    #container-column-1,
-    #container-column-2 {
+    /* Definindo largura do containeres dos Cards de Noticias e Principais Noticias */
+    #container-cards-noticias,
+    #container-principais-noticias {
+        width: 100%;
+    }
+    
+    /* Definindo largura do containeres de Ultimas Noticias e Mais Populares */
+    #container-ultimas-noticias,
+    #container-mais-populares {
         width: 100%;
     }
 
-    #container-ultimas-noticias,
-    #container-mais-populares{
+    /* Definindo largura dos cards de categoria */
+    .div-card-categoria-1,
+    .div-card-categoria-2 {
         width: 100%;
+    }
+    
+    /* Definindo altura dos cards secundarios de categoria */
+    .div-card-categoria-2 img {
+        height: 25dvh;
+    }
+
+    /* Altura regulada automaticamente pelas categorias */
+    #hardware,
+    #software,
+    #IA {
+        height: auto;
     }
 }

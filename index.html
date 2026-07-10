@@ -98,12 +98,13 @@
 
             <div class="container d-flex flex-wrap h-75 w-100 p-lg-0">
 
-                <div id="container-column-1" class="container h-100 p-0"> <!-- container com altura de 100% e largura de 75% -->
+                <div id="container-cards-noticias" class="container h-100 p-0">
+                    <!-- container com altura de 100% e largura de 75% -->
 
                     <div class="row h-100 w-100"> <!-- linha do grid com altura 100% e gap horizontal de 5 -->
 
                         <!-- container com altura de 100%, largura de 75% em dispositivos maiores e largura de 100% em dispositivos menores -->
-                        <div class="col col-12 col-lg-8 px-0 mx-0 column-card-1"> 
+                        <div class="col col-12 col-lg-8 px-0 mx-0 column-card-1">
 
                             <!-- CARD PRINCIPAL -->
 
@@ -129,7 +130,8 @@
                         </div>
 
 
-                        <div class="col col-12 col-lg-4 my-0 pt-4 pt-lg-0"> <!-- coluna com largura de 8 colunas do grid -->
+                        <div class="col col-12 col-lg-4 my-0 pt-4 pt-lg-0">
+                            <!-- coluna com largura de 8 colunas do grid -->
 
                             <div class="row mx-lg-1 px-0 column-card-2 mb-4"> <!-- linha do grid com altura 50% -->
 
@@ -184,7 +186,7 @@
                 </div>
 
                 <!-- container com altura de 100%, largura de 25% em dispositivos maiores e largura de 100  % em dispositivos menores -->
-                <div id="container-column-2" class="container h-100 p-0 m-0">
+                <div id="container-principais-noticias" class="container h-100 p-0 m-0">
 
                     <h2 id="heading-principais-noticias" class="text-white h-auto pb-5 ps-3">Principais Notícias</h2>
 
@@ -336,15 +338,15 @@
         <!-- HARDWARE -->
 
 
-        <div id="hardware" class="container vh-100 my-5 pt-4">
+        <div id="hardware" class="container my-5 pt-4">
 
             <!-- Titulo da categoria HARDWARE -->
             <h1 class="heading-categorias text-primary mb-3 ps-3">Hardware</h1>
 
-            <div class="d-flex justify-content-between gap-4 w-100" style="height: 85%;">
+            <div class="d-flex justify-content-lg-between flex-wrap flex-lg-nowrap gap-4 w-100" style="height: 85%;">
 
                 <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                <div class="div-card-categoria-1 card text-bg-dark h-100 w-50 overflow-hidden border-0 rounded-0">
+                <div class="div-card-categoria-1 card text-bg-dark h-100 overflow-hidden border-0 rounded-0">
 
                     <img src="img/erro_steam_machine.jpg" class="card-img w-100 h-100 rounded-0" alt="">
 
@@ -361,9 +363,10 @@
                 </div>
 
                 <div
-                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
+                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 border-0 border-bottom rounded-0 ">
 
-                    <img src="img/ram.jpg" class="card-img-top object-fit-cover h-50 w-100 rounded-0" alt="">
+                    <!-- Altura configurada com CSS -->
+                    <img src="img/ram.jpg" class="card-img-top object-fit-cover w-100 rounded-0" alt="">
 
                     <div class="card-body">
                         <p class="card-text text-primary fw-light">HARDWARE</p>
@@ -383,15 +386,15 @@
         <!-- SOFTWARE -->
 
 
-        <div id="software" class="container vh-100 pt-4">
+        <div id="software" class="container pt-4">
 
             <!-- Titulo da categoria SOFTWARE -->
             <h1 class="heading-categorias text-primary mb-3 ps-3">Software</h1>
 
-            <div class="d-flex justify-content-between gap-4 w-100" style="height: 85%;">
+            <div class="d-flex justify-content-lg-between flex-wrap flex-lg-nowrap gap-4 w-100" style="height: 85%;">
 
                 <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                <div class="div-card-categoria-1 card text-bg-dark h-100 w-50 overflow-hidden border-0 rounded-0">
+                <div class="div-card-categoria-1 card text-bg-dark h-100 overflow-hidden border-0 rounded-0">
 
                     <img src="img/outlook.png" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
 
@@ -409,9 +412,10 @@
                 </div>
 
                 <div
-                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0 ">
+                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 border-0 border-bottom rounded-0 ">
 
-                    <img src="img/whatsapp.jpeg" class="card-img-top object-fit-cover h-50 w-100 rounded-0" alt="">
+                    <!-- Altura configurada com CSS -->
+                    <img src="img/whatsapp.jpeg" class="card-img-top object-fit-cover w-100 rounded-0" alt="">
 
                     <div class="card-body">
                         <p class="card-text text-primary fw-light">APPS</p>
@@ -431,15 +435,15 @@
         <!-- IA -->
 
 
-        <div id="IA" class="container vh-100 my-5 pt-4">
+        <div id="IA" class="container my-5 pt-4">
 
             <!-- Titulo da categoria IA -->
             <h1 class="heading-categorias text-primary mb-3 ps-3">IA</h1>
 
-            <div class="d-flex justify-content-between gap-4 w-100" style="height: 85%;">
+            <div class="d-flex justify-content-lg-between flex-wrap flex-lg-nowrap gap-4 w-100" style="height: 85%;">
 
                 <!-- Card com fundo escuro, e overflow-hidden para esconder o aumento da imagem -->
-                <div class="div-card-categoria-1 card text-bg-dark h-100 w-50 overflow-hidden border-0 rounded-0">
+                <div class="div-card-categoria-1 card text-bg-dark h-100 overflow-hidden border-0 rounded-0">
 
                     <img src="img/Alibaba.jpg" class="card-img object-fit-cover w-100 h-100 rounded-0" alt="">
 
@@ -456,10 +460,10 @@
                 </div>
 
                 <div
-                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 w-50 border-0 border-bottom rounded-0">
+                    class="div-card-categoria-2 card bg-transparent overflow-hidden h-100 border-0 border-bottom rounded-0">
 
-                    <img src="img/anthropic.jpg"
-                        class="card-img-top object-fit-cover overflow-hidden h-50 w-100 rounded-0" alt="">
+                    <!-- Altura configurada com CSS -->
+                    <img src="img/anthropic.jpg" class="card-img-top object-fit-cover w-100 rounded-0" alt="">
 
                     <div class="card-body h-50">
                         <p class="card-text text-primary fw-light">IA</p>
