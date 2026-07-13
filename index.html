@@ -220,8 +220,8 @@
         </div>
 
 
-        <div class="container-fluid">
-            <div id="ultimas-noticias" class="container d-flex flex-wrap h-auto w-100 pt-5 pb-2 px-0">
+        <div class="container-fluid px-0">
+            <div id="ultimas-noticias" class="container d-flex flex-wrap h-auto w-100 pt-5 pb-2 px-0 px-lg-3">
 
                 <!-- AREA ULTIMAS NOTICIAS -->
 
@@ -297,7 +297,7 @@
 
                 <!-- AREA NOTICIAS MAIS POPULARES -->
 
-                <div id="container-mais-populares" class="container h-auto pt-5 px-1">
+                <div id="container-mais-populares" class="container h-auto pt-5 px-3 px-lg-1">
 
                     <div id="div-mais-populares" class="card border-0 rounded-0">
                         <div class="card-body text-white">
@@ -326,7 +326,7 @@
                                     Samsung prepara bloqueio nativo de aplicações para a nova One UI 9.5
                                 </a>
                                 <a href="#"
-                                    class="list-group-item list-group-item-action bg-transparent text-white pb-5">
+                                    class="list-group-item list-group-item-action bg-transparent text-white pb-3 pb-lg-5">
                                     <i class="bi bi-stop-fill"></i>
                                     Jon Prosser nega acusações da Apple sobre fuga do iOS 26 em tribunal
                                 </a>
@@ -342,7 +342,7 @@
         <!-- HARDWARE -->
 
 
-        <div id="hardware" class="container my-5 pt-4">
+        <div id="hardware" class="container my-5 pt-2 pt-lg-4">
 
             <!-- Titulo da categoria HARDWARE -->
             <h1 class="heading-categorias text-primary mb-3 ps-3">Hardware</h1>
@@ -372,8 +372,8 @@
                     <!-- Altura configurada com CSS -->
                     <img src="img/ram.jpg" class="card-img-top object-fit-cover w-100 rounded-0" alt="">
 
-                    <div class="card-body">
-                        <p class="card-text text-primary fw-light">HARDWARE</p>
+                    <div class="card-body px-1 p-md-3">
+                        <p class="card-text text-primary fw-light mb-1">HARDWARE</p>
                         <h1 class="heading-card-categoria-2 card-text">
                             Centros de IA forçam novo aumento no preço das memórias RAM e SSD
                         </h1>
@@ -390,7 +390,7 @@
         <!-- SOFTWARE -->
 
 
-        <div id="software" class="container pt-4">
+        <div id="software" class="container pt-2 pt-lg-4">
 
             <!-- Titulo da categoria SOFTWARE -->
             <h1 class="heading-categorias text-primary mb-3 ps-3">Software</h1>
@@ -421,8 +421,8 @@
                     <!-- Altura configurada com CSS -->
                     <img src="img/whatsapp.jpeg" class="card-img-top object-fit-cover w-100 rounded-0" alt="">
 
-                    <div class="card-body">
-                        <p class="card-text text-primary fw-light">APPS</p>
+                    <div class="card-body px-1 p-md-3">
+                        <p class="card-text text-primary fw-light mb-1">APPS</p>
                         <h1 class="heading-card-categoria-2 card-text">
                             WhatsApp prepara novo modo que torna os tablets como dispositivo principal
                         </h1>
@@ -439,7 +439,7 @@
         <!-- IA -->
 
 
-        <div id="IA" class="container my-5 pt-4">
+        <div id="IA" class="container my-5 pt-2 pt-lg-4">
 
             <!-- Titulo da categoria IA -->
             <h1 class="heading-categorias text-primary mb-3 ps-3">IA</h1>
@@ -469,8 +469,8 @@
                     <!-- Altura configurada com CSS -->
                     <img src="img/anthropic.jpg" class="card-img-top object-fit-cover w-100 rounded-0" alt="">
 
-                    <div class="card-body h-50">
-                        <p class="card-text text-primary fw-light">IA</p>
+                    <div class="card-body px-1 p-md-3">
+                        <p class="card-text text-primary fw-light mb-1">IA</p>
                         <h1 class="heading-card-categoria-2 card-text">
                             Anthropic prepara primeiro chip de IA com tecnologia de 2 nm da Samsung
                         </h1>
@@ -547,11 +547,26 @@
 
         <div class="offcanvas-body">
 
-            <ul class="list-group list-group-flush fw-bolder">
-                <li class="list-group-item bg-transparent text-white">Hardware</li>
-                <li class="list-group-item bg-transparent text-white">Startups</li>
-                <li class="list-group-item bg-transparent text-white">IA</li>
-                <li class="list-group-item bg-transparent text-white">Segurança</li>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent">
+                    <a href="#ultimas-noticias" id="sim" class="text-white fw-bolder link-underline link-underline-opacity-0"
+                        data-bs-dismiss="offcanvas" data-bs-target="#offcanvas-topicos">Últimas</a>
+                </li>
+
+                <li class="list-group-item bg-transparent">
+                    <a href="#hardware" class="text-white fw-bolder link-underline link-underline-opacity-0"
+                        data-bs-dismiss="offcanvas" data-bs-target="#offcanvas-topicos">Hardware</a>
+                </li>
+
+                <li class="list-group-item bg-transparent">
+                    <a href="#software" class="text-white fw-bolder link-underline link-underline-opacity-0"
+                        data-bs-dismiss="offcanvas" data-bs-target="#offcanvas-topicos">Software</a>
+                </li>
+
+                <li class="list-group-item bg-transparent">
+                    <a href="#IA" class="text-white fw-bolder link-underline link-underline-opacity-0"
+                        data-bs-dismiss="offcanvas" data-bs-target="#offcanvas-topicos">IA</a>
+                </li>
             </ul>
 
         </div>

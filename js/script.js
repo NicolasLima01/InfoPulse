@@ -85,3 +85,11 @@ btnAbrirPesquisa.addEventListener('click', function () {
 //     itemUltimaNoticiaTexto.style.textDecoration = "none";
 //     itemUltimaNoticiaTexto.style.textDecorationLine = "none";
 // })
+
+
+let linkOffCanvas = document.querySelector("#offcanvas-topicos div ul li a");
+// let linkOffCanvas = document.getElementById("sim");
+linkOffCanvas.addEventListener("click", () => {
+    let href = linkOffCanvas.href;
+    window.location.href = href;
+})

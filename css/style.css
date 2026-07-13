@@ -337,5 +337,17 @@ footer {
         width: 128px;
         height: 72px;
     }
+
+    .heading-categorias{
+        font-size: 44px;
+    }
+
+    .heading-card-categoria-1{
+        font-size: 28px;
+    }
+    
+    .heading-card-categoria-2{
+        font-size: 24px;
+    }
     
 }
