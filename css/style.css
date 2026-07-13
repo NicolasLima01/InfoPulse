@@ -322,3 +322,20 @@ footer {
         height: auto;
     }
 }
+
+@media (max-width: 576px) {
+
+    #heading-card-principal{
+        font-size: 28px;
+    }
+
+    #heading-ultimas-noticias{
+        font-size: 38px;
+    }
+
+    .img-item-ultimas-noticias{
+        width: 128px;
+        height: 72px;
+    }
+    
+}
