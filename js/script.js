@@ -87,9 +87,28 @@ btnAbrirPesquisa.addEventListener('click', function () {
 // })
 
 
-let linkOffCanvas = document.querySelector("#offcanvas-topicos div ul li a");
-// let linkOffCanvas = document.getElementById("sim");
-linkOffCanvas.addEventListener("click", () => {
-    let href = linkOffCanvas.href;
-    window.location.href = href;
-})
+let offCanvas = document.getElementById("offcanvas-topicos"); //Guarda offcanvas
+let linksOffCanvas = document.querySelectorAll("#offcanvas-topicos div ul li a"); //Guarda todos os links do offcanvas
+let linkClicado; //Variável que vai receber link clicado no offcanvas
+
+//Foreach para verificar todos os links do offcanvas
+linksOffCanvas.forEach(link => {
+
+    //evento que ocorre em clicar em um link
+    link.addEventListener("click", () => {
+
+        //Guarda link que foi clicado
+        linkClicado = link;
+    });
+});
+
+//Evento que ocorre ao fechar o offcavas
+offCanvas.addEventListener("hidden.bs.offcanvas", () => {
+
+    // Ocorre se o link não nulo
+    if (linkClicado != null) {
+        let href = linkClicado.href; //armazena href/url do link
+        window.location.href = href; //faz página ir até o link selecionado
+        linkClicado = null; //reseta valor da variável
+    }
+});
