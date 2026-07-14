@@ -156,6 +156,10 @@
     text-decoration-thickness: 2px;
 }
 
+.item-ultimas-noticias p.fw-light{
+    font-size: 14px;
+}
+
 .item-ultimas-noticias p.fw-light:hover {
     text-decoration: underline;
     text-decoration-line: overline;
