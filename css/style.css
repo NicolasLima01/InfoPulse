@@ -89,26 +89,28 @@
 
 /* Imagem do card principal */
 .column-card-1 div img {
-    transition: all 0.5s ease;
     /* transição do zoom da imagem */
+    transition: all 0.5s ease;
     aspect-ratio: 1/1;
 }
 
+/* Mouse sobre imagem do card principal */
 .column-card-1 div img:hover {
-    scale: 1.05;
     /* Aumenta tamanho da imagem, gerando efeito de zoom */
+    scale: 1.05;
 }
 
 /* Imagem do card secundario */
 .column-card-2 div img {
-    transition: all 0.5s ease;
     /* transição do zoom da imagem */
+    transition: all 0.5s ease;
     aspect-ratio: 1/1;
 }
 
+/* Mouse sobre imagem do card secundario */
 .column-card-2 div img:hover {
-    scale: 1.05;
     /* Aumenta tamanho da imagem, gerando efeito de zoom */
+    scale: 1.05;
 }
 
 /* Classe que aplica gradiente ao fundo do titulo dos cards */
@@ -142,7 +144,6 @@
 #container-ultimas-noticias {
     width: 75%;
 }
-
 
 /* Titulo da Area de Ultimas Noticias */
 
@@ -248,8 +249,8 @@
 }
 
 .div-card-categoria-1 img:hover {
-    scale: 1.05;
     /* Aumenta tamanho da imagem, gerando efeito de zoom */
+    scale: 1.05;
 }
 
 /* Imagem do card secundario */
@@ -269,11 +270,11 @@
 /*                           FOOTER                            */
 /* ----------------------------------------------------------- */
 
-
 footer {
     height: 300px;
 }
 
+/* Classe de opacidade para telas maiores */
 .opacidade-lg-0 {
     opacity: 0;
 }
@@ -283,7 +284,7 @@ footer {
 /* ----------------------------------------------------------- */
 
 
-
+/* breakpoint md do bootstrap */
 @media (max-width: 991px) {
 
     #logo-navbar {
@@ -330,11 +331,14 @@ footer {
         height: auto;
     }
 
+    /* Classe de opacidade para telas menores */
     .opacidade-100 {
         opacity: 1;
     }
 }
 
+
+/* breakpoint sm do bootstrap */
 @media (max-width: 576px) {
 
     #heading-card-principal {
