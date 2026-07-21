@@ -8,11 +8,11 @@ let LogoNavBar = document.getElementById('logo-navbar'); //declarando variável 
 // window.addEventListener("resize", () => {
 //     if (window.innerWidth > 991){
 //         LogoNavBar.style.width = 0;
-//         navBar.classList.remove("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+//         navBar.classList.remove("sticky-top"); //adiciona classe bootstrap que deixe o header fixado
 //     }
 //     else{
 //         LogoNavBar.style.width = "100px"; //Altera a largura da logo para 100px
-//         navBar.classList.add("sticky-top"); //adiciona classe bootstrap que deixe oo header fixado
+//         navBar.classList.add("sticky-top"); //adiciona classe bootstrap que deixe  header fixado
 //     }
 // })
 
@@ -76,16 +76,10 @@ btnAbrirPesquisa.addEventListener('click', function () {
     }
 });
 
-// Código para tirar o underline do texto enquanto o mouse estiver por cima do topico
 
-// let itemUltimaNoticiaTopico = document.querySelector(".item-ultimas-noticias div .fw-light");
-// let itemUltimaNoticiaTexto = document.querySelector(".item-ultimas-noticias div .fw-bold");
-
-// itemUltimaNoticiaTopico.addEventListener('mouseover', function () {
-//     itemUltimaNoticiaTexto.style.textDecoration = "none";
-//     itemUltimaNoticiaTexto.style.textDecorationLine = "none";
-// })
-
+// ----------------------------------------
+//              LINK OFFCANVAS
+// ----------------------------------------
 
 let offCanvas = document.getElementById("offcanvas-topicos"); //Guarda offcanvas
 let linksOffCanvas = document.querySelectorAll("#offcanvas-topicos div ul li a"); //Guarda todos os links do offcanvas

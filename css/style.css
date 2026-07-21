@@ -171,6 +171,14 @@
     height: 108px;
     width: 192px;
     aspect-ratio: 16 / 9;
+    /* transição do zoom da imagem */
+    transition: all 0.5s ease;
+}
+
+/* Ocorre ao passar o mouse sobre uma das Ultimas Noticias */
+.item-ultimas-noticias:hover {
+    /* Aumenta tamanho da imagem, gerando efeito de zoom */
+    /* zoom: 1.05; */
 }
 
 
@@ -254,14 +262,17 @@
 }
 
 /* Imagem do card secundario */
-.div-card-categoria-2 img {
+.div-card-categoria-2 a {
     height: 50%;
-    /* transição do zoom da imagem */
-    transition: all 0.5s ease;
     aspect-ratio: 1/1;
 }
 
-.div-card-categoria-2 img:hover {
+.div-card-categoria-2 a img {
+    /* transição do zoom da imagem */
+    transition: all 0.5s ease;
+}
+
+.div-card-categoria-2 a img:hover {
     /* Aumenta tamanho da imagem, gerando efeito de zoom */
     scale: 1.05;
 }
@@ -316,7 +327,7 @@ footer {
     }
 
     /* Definindo altura dos cards secundarios de categoria */
-    .div-card-categoria-2 img {
+    .div-card-categoria-2 a {
         height: 25dvh;
     }
 
