@@ -175,12 +175,6 @@
     transition: all 0.5s ease;
 }
 
-/* Ocorre ao passar o mouse sobre uma das Ultimas Noticias */
-.item-ultimas-noticias:hover {
-    /* Aumenta tamanho da imagem, gerando efeito de zoom */
-    /* zoom: 1.05; */
-}
-
 
 /* ----------------------------------------------------------- */
 /*                        MAIS POPULARES                       */
